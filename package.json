@@ -1,6 +1,6 @@
 {
   "name": "snorun",
-  "version": "2.0.0",
+  "version": "1.5.0",
   "description": "Run & interact with shell command like in node without pain.",
   "keywords": [
     "async",
