@@ -1,7 +1,14 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 1.5.1 (2025-10-22)
+
+
+### Bug Fixes
+
+* **main:** move to splited repo from monorepo ([627807c](https://github.com/snomiao/js/commit/627807c34ac316e4ab8b91f50b6f8e76fb2d21bd))
+* **main:** restore version to 1 ([cf9742a](https://github.com/snomiao/js/commit/cf9742ae2553e794404ee1bdc0da6d6b5a97b877))
 
 ## [1.3.239](https://github.com/snomiao/js/compare/snorun@1.3.99...snorun@1.3.239) (2023-01-11)
 
