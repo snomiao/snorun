@@ -1,5 +1,6 @@
 import chalk from "chalk";
-import { exec } from "child_process";
+import { exec } from "node:child_process";
+import tsaComposer from "tsa-composer";
 /**
  * @description Exec condition chain like in shell.
  *  Run command as child process and adapt stdio into main process, snorun('echo hello')
@@ -16,7 +17,10 @@ import { exec } from "child_process";
  * @returns true if cmd's exit code=0, otherwise return false
  * @author: snomiao <snomiao@gmail.com>
  */
-export default function snorun(
+const snorun = tsaComposer()(_snorun)
+export default snorun
+
+function _snorun(
   cmd: string | string[],
   { echo = true, echoPrefix = "> ", pipe = true } = {},
 ) {

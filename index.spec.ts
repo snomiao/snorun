@@ -1,4 +1,3 @@
-import { expect, it } from "vitest";
 import snorun from "./index";
 
 it("echo", async () => {
@@ -7,6 +6,17 @@ it("echo", async () => {
   ).toBe(true);
 });
 
+
 it("stdout", async () => {
   expect(await snorun("echo asdf").stdout).toBe("asdf");
+});
+
+it("tsa-composer echo", async () => {
+  expect(
+    ((await snorun`echo asdf && echo succ || echo fail`)),
+  ).toBe(true);
+});
+
+it("tsa-composer stdout", async () => {
+  expect((await snorun`echo asdf`.stdout)).toBe("asdf");
 });
