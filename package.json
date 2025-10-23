@@ -38,13 +38,13 @@
   },
   "type": "module",
   "exports": {
-    "types": "./dist/index.d.ts",
+    "types": "./index.ts",
     "require": "./dist/index.cjs",
     "import": "./dist/index.mjs"
   },
   "gitHead": "ca1c2db9974aa48a03d7695327ba73367192028c",
   "module": "dist/index.min.mjs",
-  "types": "dist/index.d.ts",
+  "types": "index.ts",
   "dependencies": {
     "tsa-composer": "^3.0.3"
   }
