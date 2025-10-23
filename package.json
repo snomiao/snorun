@@ -10,9 +10,9 @@
     "shell",
     "spawn"
   ],
-  "homepage": "https://github.com/snomiao/js#readme",
+  "homepage": "https://github.com/snomiao/snorun#readme",
   "bugs": {
-    "url": "https://github.com/snomiao/js/issues?q=is%3Aissue+is%3Aopen+snorun"
+    "url": "https://github.com/snomiao/snorun/issues"
   },
   "license": "MIT",
   "author": "Snowstar Miao <snomiao@gmail.com>",
@@ -20,7 +20,7 @@
     "dist"
   ],
   "main": "dist/index.min.cjs",
-  "repository": "https://github.com/snomiao/js",
+  "repository": "https://github.com/snomiao/snorun",
   "scripts": {
     "build": "bun build index.ts --outdir=dist && bun build:umd",
     "build:umd": "bunx rollup dist/index.js --file dist/index.umd.js --format umd --name \"snorun\"",
