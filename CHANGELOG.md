@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/snomiao/snorun/compare/v1.6.0...v1.6.1) (2025-10-23)
+
+
+### Bug Fixes
+
+* **package.json:** update types path to point to index.ts for better clarity and consistency ([003e729](https://github.com/snomiao/snorun/commit/003e729e0187a0fe5a17e806230f6dd9bbfc60cf))
+
 ## [1.6.0](https://github.com/snomiao/snorun/compare/v1.5.1...v1.6.0) (2025-10-23)
 
 
