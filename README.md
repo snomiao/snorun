@@ -1,52 +1,66 @@
 # snorun
 
-Run & interact with shell command like in node without pain.
+Run and interact with shell commands in Node.js seamlessly.
 
-## Feat
+## Features
 
-- Returns true if command exited with code 0 and otherwise false.
-- pipe stdin and stdout and stderr with your main process
+- Returns `true` if command exits with code 0, `false` otherwise
+- Pipes stdin, stdout, and stderr with your main process
+- Simple, intuitive API for shell command execution
+
+## Installation
+
+```bash
+npm install snorun
+```
 
 ## Usage
 
-If you like to do this in shell,
+Convert shell command chains to JavaScript:
 
+**Shell:**
 ```shell
 echo command && echo succ || echo fail
 ```
 
-then you can convert them into javascript
-
+**JavaScript:**
 ```javascript
 import snorun from "snorun";
 
 const result =
-  ((await snorun("echo command")) && (await snorun("echo succ"))) || (await snorun("echo fail"));
+  ((await snorun("echo command")) && (await snorun("echo succ"))) ||
+  (await snorun("echo fail"));
 
 // result = true
 
-// and your console will show like this
+// Console output:
 // > command
 // > succ
 ```
 
-## About
+## API
 
-### License
+### `snorun(command: string): Promise<boolean>`
 
-GPLv3 - [The GNU General Public License v3.0 - GNU Project - Free Software Foundation](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Executes a shell command and returns a promise that resolves to:
+- `true` if the command exits with code 0
+- `false` otherwise
 
-### Author
+All output is piped to the parent process.
 
-Author: snomiao <snomiao@gmail.com>
-Website: [snomiao.com](https://snomiao.com)
+## License
 
-### Sponsors
+[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-- None yet.
+## Author
 
-Claim your sponsorship by donating snomiao <[Email: snomiao@gmail.com](mailto:snomiao@gmail.com)>
+**snomiao** - [snomiao.com](https://snomiao.com)
+Email: snomiao@gmail.com
 
-### Contribute
+## Contributing
 
-The main repo is in [here](https://github.com/snomiao/snorun#readme), any issue and PR's welcome.
+Issues and pull requests are welcome at [github.com/snomiao/snorun](https://github.com/snomiao/snorun)
+
+## Support
+
+If you find this project helpful, consider [sponsoring](mailto:snomiao@gmail.com)!
