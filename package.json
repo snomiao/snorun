@@ -22,7 +22,7 @@
   ],
   "repository": "https://github.com/snomiao/snorun",
   "scripts": {
-    "build": "bun build index.ts --outdir=dist --target=node --sourcemap",
+    "build": "bun build ./index.ts --outdir=dist --target=node --sourcemap",
     "prepack": "npm run build",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
