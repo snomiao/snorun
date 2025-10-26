@@ -22,7 +22,7 @@
   ],
   "repository": "https://github.com/snomiao/snorun",
   "scripts": {
-    "build": "bun build index.ts --outdir=dist --target=node --sourcemap --external:tsa-composer",
+    "build": "bun build index.ts --outdir=dist --target=node --sourcemap",
     "prepack": "npm run build",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
@@ -36,14 +36,12 @@
     "chalk": "^5.1.0",
     "husky": "^9.1.7",
     "semantic-release": "^25.0.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "tsa-composer": "^3.0.3"
   },
   "type": "module",
   "exports": {
     "types": "./index.ts",
     "import": "./dist/index.js"
-  },
-  "dependencies": {
-    "tsa-composer": "^3.0.3"
   }
 }
