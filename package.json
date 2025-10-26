@@ -27,14 +27,13 @@
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
     "test": "bun test",
-    "prepare": "husky"
+    "prepare": "lefthook install"
   },
   "devDependencies": {
     "@types/bun": "^1.2.13",
     "@types/jest": "^29.5.14",
     "@types/node": "18.8.3",
     "chalk": "^5.1.0",
-    "semantic-release": "^25.0.1",
     "typescript": "^5.8.3",
     "tsa-composer": "^3.0.3"
   },

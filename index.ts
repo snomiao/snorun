@@ -17,11 +17,8 @@ import tsaComposer from "tsa-composer";
  * @returns true if cmd's exit code=0, otherwise return false
  * @author: snomiao <snomiao@gmail.com>
  */
-export const snorun = tsaComposer()(_snorun)
-export const $ = snorun
-export default snorun
-
-function _snorun(
+export const $ = tsaComposer()(snorun)
+export default function snorun(
   cmd: string | string[],
   { echo = true, echoPrefix = "> ", pipe = true } = {},
 ) {
