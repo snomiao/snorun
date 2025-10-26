@@ -1,4 +1,4 @@
-import snorun from "./index";
+import snorun, { $ } from "./index";
 
 it("echo", async () => {
   expect(
@@ -19,4 +19,10 @@ it("tsa-composer echo", async () => {
 
 it("tsa-composer stdout", async () => {
   expect((await snorun`echo asdf`.stdout)).toBe("asdf");
+});
+
+it('works with $ alias', async () => {
+  expect(
+    ((await $`echo asdf && echo succ || echo fail`)),
+  ).toBe(true);
 });
