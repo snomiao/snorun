@@ -1,6 +1,6 @@
 {
   "name": "snorun",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": "Run & interact with shell command like in node without pain.",
   "keywords": [
     "async",
@@ -34,7 +34,6 @@
     "@types/jest": "^29.5.14",
     "@types/node": "18.8.3",
     "chalk": "^5.1.0",
-    "husky": "^9.1.7",
     "semantic-release": "^25.0.1",
     "typescript": "^5.8.3",
     "tsa-composer": "^3.0.3"

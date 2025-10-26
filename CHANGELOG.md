@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/snomiao/snorun/compare/v1.6.2...v1.7.0) (2025-10-26)
+
+
+### Features
+
+* **index.ts:** export snorun and alias it as $ for easier access in other modules ([16b7b54](https://github.com/snomiao/snorun/commit/16b7b5420a0247cf83d2df072865b7a64f92d05d))
+* **package.json:** update build script to target Node.js for better compatibility with server environment ([0d55a52](https://github.com/snomiao/snorun/commit/0d55a5229f4b92ce7888a31cb3a60361239eff61))
+* **tests:** add $ alias test case to validate its functionality in snorun ([a1a93cc](https://github.com/snomiao/snorun/commit/a1a93cce79d779bda2fcd6c149f35eab04624826))
+
+
+### Bug Fixes
+
+* **package.json:** update build script to use relative path for index.ts to ensure correct file resolution ([15ad88a](https://github.com/snomiao/snorun/commit/15ad88a971363ca502e6a70e3efc6c58457326a4))
+* **package.json:** update exports to use .js extension for module imports to ensure compatibility with ES modules ([1d6057c](https://github.com/snomiao/snorun/commit/1d6057c4b6f61a5bc1b3e8fd981de65e1073f88e))
+
 ### [1.6.2](https://github.com/snomiao/snorun/compare/v1.6.1...v1.6.2) (2025-10-23)
 
 ### [1.6.1](https://github.com/snomiao/snorun/compare/v1.6.0...v1.6.1) (2025-10-23)
