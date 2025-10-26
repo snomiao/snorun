@@ -22,8 +22,7 @@
   ],
   "repository": "https://github.com/snomiao/snorun",
   "scripts": {
-    "build": "bun build index.ts --outdir=dist --target=node && bun build:umd",
-    "build:umd": "bunx rollup dist/index.js --file dist/index.umd.js --format umd --name \"snorun\"",
+    "build": "bun build index.ts --outdir=dist --target=node --sourcemap --external:tsa-composer",
     "prepack": "npm run build",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
@@ -45,7 +44,6 @@
     "require": "./dist/index.cjs",
     "import": "./dist/index.mjs"
   },
-  "gitHead": "ca1c2db9974aa48a03d7695327ba73367192028c",
   "types": "index.ts",
   "dependencies": {
     "tsa-composer": "^3.0.3"
