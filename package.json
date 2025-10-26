@@ -43,7 +43,6 @@
     "types": "./index.ts",
     "import": "./dist/index.js"
   },
-  "types": "index.ts",
   "dependencies": {
     "tsa-composer": "^3.0.3"
   }
